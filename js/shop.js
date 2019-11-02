@@ -85,7 +85,6 @@ const shop = (() => {
 // shop.getProducts();
 // shop.getProduct(3);
 
-
  
 
 
