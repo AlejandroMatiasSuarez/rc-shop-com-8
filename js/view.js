@@ -174,6 +174,17 @@ const toggleModal = () => {
         //cardId.appendChild(cardDeck);
         return cardDeck
     }
+    const createInput = () => {
+        const inputArea = document.getElementById('prod-cant');
+        const eventList = [{
+            type: 'onchange'
+            method: () => {
+                console.log('onchange');
+            }
+        }];
+        const inputCant = createElement('input', false, false, eventList, false )
+    }
+
     return {
         createModal,
         createElement,
@@ -185,5 +196,4 @@ const toggleModal = () => {
     }
 })(shop);
 
-view.showModal();
-view.testMethod();
+
